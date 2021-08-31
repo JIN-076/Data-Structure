@@ -34,7 +34,7 @@ Invest your time in learning Data Structure and algorithms. <br>
 [2021.08.23]() - Team Matching : [ jhong, yeukim ]
 > _Implementation for `Stack` for `ArrayList` and `Linked List`._
 - When Implementing a `Stack` , the `ArrayList` and `Linked List` , which were previously implemented as libraries, should be included.
-- Even if it's not a stereotyped func, if you think it's a func you need, Implement it.
+- Even if it's not a stereotyped func, **if you think it's a func you need, Implement it**.
 - Write a func that determines whether the parentheses present in the formula match by entering a `char *`.
 <br>
 
