@@ -1,0 +1,39 @@
+#ifndef _BIN_TREE_AL_
+#define _BIN_TREE_AL_
+
+#include "../ArrayList/ArrayList.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct BinTreeNodeType
+{
+	char data;
+	int visited;
+
+	struct BinTreeNodeType* pLeftChild;
+	struct BinTreeNodeType* pRightChild;
+} BinTreeNode;
+
+typedef struct BinTreeType
+{
+  ArrayList* array;
+} BinTree;
+
+BinTree* makeBinTree(BinTreeNode rootNode, int maxElementCount);
+BinTreeNode* getRootNodeBT(BinTree* pBinTree);
+BinTreeNode* insertLeftChildNodeBT(BinTreeNode* pParentNode, BinTreeNode element);
+BinTreeNode* insertRightChildNodeBT(BinTreeNode* pParentNode, BinTreeNode element);
+BinTreeNode* getLeftChildNodeBT(BinTreeNode* pNode);
+BinTreeNode* getRightChildNodeBT(BinTreeNode* pNode);
+void deleteBinTree(BinTree* pBinTree);
+void deleteBinTreeNode(BinTreeNode* pNode);
+
+#endif
+
+#ifndef _COMMON_TREE_DEF_
+#define _COMMON_TREE_DEF_
+
+#define TRUE 	1
+#define FALSE	0
+
+#endif
